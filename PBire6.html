@@ -1,0 +1,34 @@
+<?php 
+
+$connection = mysql_connect('localhost','root') or die ("Couldn't connect to server.");  
+$db = mysql_select_db('probankire', $connection) or die ("Couldn't select database.");  
+
+$search=$_POST['search']; 
+
+$data = 'SELECT * FROM `staff` WHERE `fname` = "'.$search.'"'; 
+  $query = mysql_query($data) or die("Couldn't execute query. ". mysql_error()); 
+  $data2 = mysql_fetch_array($query); 
+   
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Add Staff</title>
+			
+			<meta http-equiv="content-type"; content="text/html"; charset="utf-8"/>
+		
+			<link rel= "stylesheet" href="stylling.css" type = "text/css">
+	</head>
+	
+		<header>
+			<nav>
+				<ul>
+					<li><a href="PBire2.html">Home</a></li>
+					<li><a href="PBire3.html">Add Client</a></li>
+					<li><a href="PBire4.html">Add Staff</a></li>
+					<li><a href="PBire1.html">Logout</a></li>
+				</ul>
+			</nav>	
+		</header>

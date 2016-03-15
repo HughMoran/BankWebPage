@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	    <script type="text/javascript">
+		<!-- 
+		function newPage(num) {
+		var url=new Array();
+		url[0]="PBire3.html";
+		url[1]="PBire4.html";
+		window.location=url[num];``
+		}
+		// -->
+		</script>
+		<title>Home</title>
+			
+			<meta http-equiv="content-type"; content="text/html"; charset="utf-8"/>
+		
+			<link rel= "stylesheet" href="stylling.css" type = "text/css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav>
+					<ul>					
+						<li><a href="PBire2.html" hidden>Home</a></li>
+						<li><a href="PBire3.html" hidden>Add Client</a></li>
+						<li><a href="PBire4.html" hidden>Add Staff</a></li>
+						<li><a href="PBire1.html">Logout</a></li>
+					</ul>
+				</nav>	
+			</header>
+			<section class="home">
+				<form name="search" method="POST" action="PBire5.php">
+					<fieldset>
+						<legend>Chose Option or Search</legend>
+							<label for="button">Add New Client</label>
+								<input onclick="newPage(0)" type="button" value="ADD"><br>
+								
+							<label for="button">Add New Staff</label>	
+								<input onclick="newPage(1)" type="button" value="ADD"><br>
+							
+							
+								
+							<label for="search">Search Client</label>	
+								<input type ="text" name="search" size="30" value="" required>
+								<input type="submit"value= "Search"><br>
+				</form>
+				<form name="srch" method="post" action="PBire6.php">
+							<label for="srch">Search Staff</label>	
+								<input type="text" name="srch" size="30" value="" required>
+								<input type="submit" value="Search"><br>
+					</fieldset>			
+				</form>
+			</section>
+			
+			<footer>
+			&copy: Copyright PBI 2015
+			</footer>
+		</div>
+	</body>	
+</html>		
+				
